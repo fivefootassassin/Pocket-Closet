@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <title>closet page</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="closet.css">
+
+ <!-- <script src="jquery-3.6.2.js"></script> -->
+</head>
+
+<nav id="site-nav" class="site-nav">
+ <div id="action-menu-button" class="action-menu-button"> <img src="/images/burger-menu.png" alt=""></div>
+ <div id="site-logo" class="site-logo">POCKET CLOSET</div>
+ <div id="account-menu-button" class="account-menu-button"><img src="/images/icons8-account-26.png" alt=""></div>
+</nav>
+
+<div id="action-nav" class="action-nav">
+
+ <div id="add-item-button" class="hover" onclick="addItem()">+</div>
+ <div id="collection-input-box" class="input-box">
+  <input id="item-search" class="search" type="text" placeholder="Look up items, fits, tags & more!">
+  <button id="delete-search" class="hover">𐌗</button>
+ </div>
+ <button id="help-button" class="hover">?</button>
+</div>
+
+<div id="content" class="content">
+
+ <div id="item-menu-container" class="menu-view">
+  <div id="item-menu" class="menu">
+   <div id="top-menu">
+    <input type="text" id="item-name-menu" class="menu-name" placeholder="ITEM NAME">
+    <div class="close-menu" onclick="closeMenu()">&#10799</div>
+   </div>
+   <div class="basic-info">
+    <div id="item-img">
+     <img id="edit-image" src="" alt="">
+     <input accept="image/*" type="file" id="imageInput" type="file">
+
+    </div>
+
+    <div id="item-info" class="text-info">
+     <label for="menu-brand">Brand:</label>
+     <br>
+     <input name="menu-brand" id="edit-brand" class="menu-input" placeholder="eg. Nike, Jordan, Addidas">
+     <br>
+     <br>
+     <label for="item-type">Item Type:</label>
+     <br>
+     <div id="item-type-wrap">
+      <select name="item-type" id="edit-item-type" class="menu-input">
+       <option name="Top" value="Top">Top</option>
+       <option name="Bottom" value="Bottom">Bottom</option>
+       <option name="Shoes" value="Shoes">Shoes</option>
+       <option name="Jewlery" value="Jewlery">Jewlery</option>
+       <option name="Headwear" value="Headwear">Headwear</option>
+      </select>
+     </div>
+     <br>
+     <label for="size">Size:</label>
+     <br>
+     <input name="size" id="menu-size" class="menu-input" placeholder="eg. S, 32L, US 7 ">
+     <br>
+     <br>
+     <label for="color" id="color-label">Color Pallet</label>
+     <!-- <br> -->
+     <div class="pallet-container">
+      <button type="button" href="#" id="add-item-color" class="add-color"
+       onclick="createColor(this,this.nextElementSibling)">&plus;</button>
+      <!-- <div id="remove-color-input" class="remove-button-container" onclick="removeIt(this.parentElement)">
+      </div> -->
+      <ul id="color-pallet"></ul>
+     </div>
+
+
+    </div>
+   </div>
+
+   <div id="item-adv-settings">
+    ADVANCED SETTINGS
+   </div>
+
+   <div id="item-tag-box" class="input-box">
+    <ul id="tag-list">
+     <li id="default-tag">Default Tag<span id="tag-rmv" class="hover" onclick="removeIt(this.parentElement)">x</span>
+     </li>
+     <div id="input-container" class="input-container">
+      <input type="text" id="tag-input" class="search">
+     </div>
+    </ul>
+    <button id="delete-search" class="hover">𐌗</button>
+   </div>
+
+   <div class="menu-footer">
+    <button id="create-item" class="done">DONE</button>
+   </div>
+  </div>
+  <!-- <div id="fit-menu" class="menu"></div> -->
+ </div>
+
+ <div id="item-content">
+  <!-- content goes here! -->
+  <!-- new -->
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+@Elijahdcarter777@gmail.com
+<script src="newItems.js"></script>
+
+</html>
